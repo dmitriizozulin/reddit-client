@@ -1,0 +1,25 @@
+.post {
+  border: 2px solid #424d62;
+
+  width: 600px;
+
+  margin: 16px 12px;
+  padding: 12px;
+}
+
+.post-image {
+  width: calc(100% + 24px);
+
+  margin: -8px -12px 8px -12px;
+}
+
+.post-title {
+  margin: 0 0 4px 0;
+
+  font-weight: normal;
+}
+
+.post-subreddit {
+  margin: 0 0 8px 0;
+  opacity: 0.5;
+}
