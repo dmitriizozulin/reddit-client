@@ -6,7 +6,7 @@ const Post = ({ data }) => {
   const { title, subreddit, comments_link = '#', img_url } = data;
 
   return (
-    <div className="post">
+    <div className="post" data-testid="reddit-post">
       {img_url && <img className="post-image" src={img_url} alt={title} />}
       <h2 className="post-title">{title}</h2>
       <h3 className="post-subreddit">{subreddit}</h3>

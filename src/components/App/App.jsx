@@ -13,7 +13,6 @@ const App = () => {
   const posts = useSelector(allPosts);
 
   useEffect(() => {
-    console.log('edd', fetchPosts());
     dispatch(fetchPosts());
   }, []);
 
@@ -21,7 +20,7 @@ const App = () => {
     <div className="app">
       {
         loading
-          ? <h1>Loading...</h1>
+          ? <h1 data-testid="reddit-post-loading">Loading...</h1>
           : posts.map(data => {
             return <Post data={data} key={data.id} />
           })
